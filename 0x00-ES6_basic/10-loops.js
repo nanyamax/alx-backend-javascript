@@ -3,6 +3,5 @@ export default function appendToEachArrayValue(array, appendString) {
     const index = array.indexOf(idx);
     array[index] = `${appendString}${idx}`;
   }
-
   return array;
 }
