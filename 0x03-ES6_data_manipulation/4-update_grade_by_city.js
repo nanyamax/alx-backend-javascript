@@ -1,13 +1,13 @@
 export default function updateStudentGradeByCity(
   students,
   studentsCity,
-  newGrades
+  newGrades,
 ) {
   const getStudentGrade = (student) =>
     newGrades.find((grade) => grade.studentId === student.id);
 
   const locatedStudents = students.filter(
-    (student) => student.location === studentsCity
+    (student) => student.location === studentsCity,
   );
 
   return locatedStudents.map((student) => {
